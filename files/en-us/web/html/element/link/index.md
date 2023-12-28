@@ -120,7 +120,15 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
         </tr>
         <tr>
           <td>font</td>
-          <td>CSS @font-face</td>
+          <td>
+            <p>CSS @font-face</p>
+            <div class="notecard note">
+              <p>
+                <strong>Note:</strong> This value also requires
+                <code>&#x3C;link></code> to contain the crossorigin attribute, see <a href="/en-US/docs/Web/HTML/Attributes/rel/preload#cors-enabled_fetches">CORS-enabled fetches</a>.
+              </p>
+            </div>
+          </td>
         </tr>
         <tr>
           <td>image</td>
@@ -162,6 +170,11 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
       </tbody>
     </table>
 
+- `blocking` {{Experimental_Inline}}
+
+  - : This attribute explicitly indicates that certain operations should be blocked on the fetching of an external resource. The operations that are to be blocked must be a space-separated list of blocking attributes listed below.
+    - `render`: The rendering of content on the screen is blocked.
+
 - `crossorigin`
 
   - : This [enumerated](/en-US/docs/Glossary/Enumerated) attribute indicates whether {{Glossary("CORS")}} must be used when fetching the resource.
@@ -186,7 +199,7 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
 
     Setting the `disabled` property in the DOM causes the stylesheet to be removed from the document's {{domxref("Document.styleSheets")}} list.
 
-- `fetchpriority` {{Experimental_Inline}}
+- `fetchpriority`
 
   - : Provides a hint of the relative priority to use when fetching a preloaded resource. Allowed values:
 
@@ -237,7 +250,7 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
 
 - `rel`
   - : This attribute names a relationship of the linked document to the current document. The attribute must be a space-separated list of [link type values](/en-US/docs/Web/HTML/Attributes/rel).
-- `sizes` {{Experimental_Inline}}
+- `sizes`
 
   - : This attribute defines the sizes of the icons for visual media contained in the resource.
     It must be present only if the [`rel`](#rel) contains a value of `icon` or a non-standard type such as Apple's `apple-touch-icon`.
@@ -257,9 +270,6 @@ This element includes the [global attributes](/en-US/docs/Web/HTML/Global_attrib
     The value of the attribute should be a MIME type such as **text/html**, **text/css**, and so on.
     The common use of this attribute is to define the type of stylesheet being referenced (such as **text/css**), but given that CSS is the only stylesheet language used on the web, not only is it possible to omit the `type` attribute, but is actually now recommended practice.
     It is also used on `rel="preload"` link types, to make sure the browser only downloads file types that it supports.
-- `blocking` {{Experimental_Inline}}
-  - : This attribute explicitly indicates that certain operations should be blocked on the fetching of an external resource. The operations that are to be blocked must be a space-separated list of blocking attributes listed below.
-    - `render`: The rendering of content on the screen is blocked.
 
 ### Non-standard attributes
 
@@ -381,7 +391,12 @@ You can include `render` token inside a `blocking` attribute;
 the rendering of the page will be blocked till the resource is fetched. For example:
 
 ```html
-<link blocking="render" href="critical-font.woff2" as="font" />
+<link
+  blocking="render"
+  rel="preload"
+  href="critical-font.woff2"
+  as="font"
+  crossorigin />
 ```
 
 ## Technical summary

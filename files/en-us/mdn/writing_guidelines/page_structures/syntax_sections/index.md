@@ -27,7 +27,7 @@ slice(start, end)
 ````
 
 > **Note:** The markup-language used in this case is `js-nolint`, where `js` indicates that JavaScript syntax highlighting should be used.
-> For JavaScript syntax sections `-nolint` is also required because the sytnax section is deliberatively not "quite" JavaScript and we don't want the linter to "fix" it (return values and end-of-line semicolons are omitted).
+> For JavaScript syntax sections `-nolint` is also required because the syntax section is deliberatively not "quite" JavaScript and we don't want the linter to "fix" it (return values and end-of-line semicolons are omitted).
 
 ### General style rules
 
@@ -61,7 +61,7 @@ or this (from {{DOMxRef("Document.hasStorageAccess()")}}):
 hasStorageAccess()
 ```
 
-When the method is static, for example {{DOMxRef("URL.createObjectURL()")}}, then provide its interface as well:
+When the method is static, for example {{DOMxRef("URL/createObjectURL_static", "URL.createObjectURL()")}}, then provide its interface as well:
 
 ```js-nolint
 URL.createObjectURL(object)
