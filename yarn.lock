@@ -421,7 +421,7 @@
   resolved "https://registry.yarnpkg.com/@codemirror/state/-/state-6.2.1.tgz#6dc8d8e5abb26b875e3164191872d69a5e85bd73"
   integrity sha512-RupHSZ8+OjNT38zU9fKH2sv+Dnlr8Eb8sl4NOnnqz95mCFTZUaiRP8Xv5MeeaG0px2b8Bnfe7YGwCV3nsBhbuw==
 
-"@codemirror/state@^6.3.2":
+"@codemirror/state@^6.3.3":
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/@codemirror/state/-/state-6.4.0.tgz#8bc3e096c84360b34525a84696a84f86b305363a"
   integrity sha512-hm8XshYj5Fo30Bb922QX9hXB/bxOAVH+qaqHBzw5TKa72vOeslyGwd4X8M0c1dJ9JqxlaMceOQ8RsL9tC7gU0A==
@@ -787,27 +787,27 @@
   resolved "https://registry.yarnpkg.com/@mdn/browser-compat-data/-/browser-compat-data-5.5.2.tgz#8afdde234a99c3d55a5a632c54cc8943998556af"
   integrity sha512-HZX4YUlQXDrtuuyAw3ZrzS3LIlsBVL5AhRTROa9cwn6rUpBgtrMWy63S+ahvYhrJgbLmsrEmYwsd5YJBGk5btg==
 
-"@mdn/yari@2.37.0":
-  version "2.37.0"
-  resolved "https://registry.yarnpkg.com/@mdn/yari/-/yari-2.37.0.tgz#b52763436cde6590803e8435994f60b78798c9ab"
-  integrity sha512-pwnriLocKgOQSWgbQl8n3k86I5xLR0qBTSpYMRA5cCFIiXOjCmT2IgT5rThiNK0dcXXPELjf/3xU7Ih1aiAZKQ==
+"@mdn/yari@2.37.1":
+  version "2.37.1"
+  resolved "https://registry.yarnpkg.com/@mdn/yari/-/yari-2.37.1.tgz#fc35ce670168714f03b06ad80905d27b5665b5d9"
+  integrity sha512-rDpF60hlkGkVvpve+cgJYhiRd532heR01b58SpEdmEPgrs8a5WrqbEehJiD9dic6S5UTx0IQSy0tu70NdU6XdA==
   dependencies:
     "@caporal/core" "^2.0.7"
     "@codemirror/lang-css" "^6.2.1"
     "@codemirror/lang-html" "^6.4.7"
     "@codemirror/lang-javascript" "^6.2.1"
-    "@codemirror/state" "^6.3.2"
+    "@codemirror/state" "^6.3.3"
     "@codemirror/theme-one-dark" "^6.1.2"
     "@fast-csv/parse" "^4.3.6"
     "@mdn/bcd-utils-api" "^0.0.5"
     "@mdn/browser-compat-data" "^5.4.4"
     "@mozilla/glean" "2.0.5"
-    "@sentry/integrations" "^7.85.0"
-    "@sentry/node" "^7.85.0"
+    "@sentry/integrations" "^7.86.0"
+    "@sentry/node" "^7.86.0"
     "@stripe/stripe-js" "^2.2.0"
     "@use-it/interval" "^1.0.0"
     "@vscode/ripgrep" "^1.15.9"
-    "@webref/css" "^6.9.2"
+    "@webref/css" "^6.10.0"
     accept-language-parser "^1.5.0"
     async "^3.2.5"
     chalk "^5.3.0"
@@ -920,7 +920,7 @@
     "@sentry/types" "7.91.0"
     "@sentry/utils" "7.91.0"
 
-"@sentry/integrations@^7.85.0":
+"@sentry/integrations@^7.86.0":
   version "7.91.0"
   resolved "https://registry.yarnpkg.com/@sentry/integrations/-/integrations-7.91.0.tgz#b0496c9e404783bc433b1d2464d8f9aa180ebc8e"
   integrity sha512-LGRfb+WfG3FaWHtDnJIhtupweat0imCQr2z/5SSbQKzqxHhtlaEU+9IExBmBdzq90n4lRBaVQHA3zGuU02uOhg==
@@ -930,7 +930,7 @@
     "@sentry/utils" "7.91.0"
     localforage "^1.8.1"
 
-"@sentry/node@^7.85.0":
+"@sentry/node@^7.86.0":
   version "7.91.0"
   resolved "https://registry.yarnpkg.com/@sentry/node/-/node-7.91.0.tgz#26bf13c3daf988f9725afd1a3cc38ba2ff90d62a"
   integrity sha512-hTIfSQxD7L+AKIqyjoq8CWBRkEQrrMZmA3GSZgPI5JFWBHgO0HBo5TH/8TU81oEJh6kqqHAl2ObMhmcnaFqlzg==
@@ -1237,7 +1237,7 @@
     proxy-from-env "^1.1.0"
     yauzl "^2.9.2"
 
-"@webref/css@^6.9.2":
+"@webref/css@^6.10.0":
   version "6.10.1"
   resolved "https://registry.yarnpkg.com/@webref/css/-/css-6.10.1.tgz#2528fce8cb0b57fd2c1c87ab856eeb5db8edf504"
   integrity sha512-ZxCgURpBTiZ+YjHT1BSPWjfI6nJJIGLH5876TLZ4LGq2KEBbWUymZ3cZVXjXZTjLqO3BzQE4mnKP/C9ADCBviA==
